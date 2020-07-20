@@ -1,0 +1,37 @@
+//________________________________________________________________________________IMPORT PARTS____//
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
+@import "./html-coding/reset";
+@import "./html-coding/colors";
+@import "./html-coding/resp";
+@import "./html-coding/widths";
+@import "./html-coding/flex";
+//_____________________________________________________________________VARIABLES__________________//
+//_______________________________________________________________________Container________________//
+$container-width: 89%;
+$max-container-width: 1366px;
+//_______________________________________________________________________Fonts____________________//
+$mainFont: "Open Sans", sans-serif;
+$secondFont: "Raleway", sans-serif;
+$fontSize: 14px;
+body {
+  font-family: $mainFont;
+  font-size: $fontSize;
+  font-weight: normal;
+}
+.container {
+  width: $container-width;
+  max-width: $max-container-width;
+  margin: 0 auto;
+  &--small {
+    max-width: 1010px;
+  }
+}
+//_______________________________Footer classes from FrontEnd mentor__________//
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
